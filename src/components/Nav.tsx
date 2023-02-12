@@ -7,10 +7,19 @@ export const formatAnchorLink = (link: string) => {
   return link.split(' ').join('-').toLowerCase()
 }
 
-const Nav: FC = () => (
-  <ul className={classNames('flex flex-col gap-3 font-primary')}>
+const Nav: FC<{ direction?: 'vertical' | 'horizontal'}> = ({ direction = 'horizontal'}) => (
+  <ul
+    className={classNames(
+      'flex justify-center items-center gap-3 font-primary',
+      {'flex-col': direction === 'vertical'}
+    )}
+  >
     {menuData.map((it, index) => (
-      <a href={`#${formatAnchorLink(it)}`} key={index} className={'hover:bg-black/5'}>
+      <a
+        href={`#${formatAnchorLink(it)}`}
+        key={index}
+        className={'hover:bg-black/5'}
+      >
         <li
           className={'px-8 py-2 text-black uppercase rounded'}
         >

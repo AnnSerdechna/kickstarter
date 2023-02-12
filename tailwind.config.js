@@ -25,7 +25,7 @@ module.exports = {
         grey: '#7C7C7C',
         accent: '#0DB2B3',
         disabled: '#BDBDBD',
-        teal: '0C797A',
+        teal: '#0C797A',
         'light-teal': '#D6ECEC',
       }
     },
