@@ -1,8 +1,9 @@
+import {FC} from 'react'
 
-const App = () =>  {
+const App: FC = () =>  {
   return (
-    <div className="App">
-
+    <div className="app">
+      <h1 className={'text-blue-900'}>Some title</h1>
     </div>
   );
 }
