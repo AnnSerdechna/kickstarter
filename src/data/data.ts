@@ -22,6 +22,12 @@ export interface TestimonialProps {
   customerAvatar: string
 }
 
+export interface FeaturesDataProps {
+  id: number
+  category: string
+  items: string[]
+}
+
 export const heroData: SectionDataProps = {
   title: 'Futuristic Wireless Speaker',
   text: 'Luna’s performance is balanced and smooth in all frequency ranges which makes the music both naturally pleasant and distinctly more layered.',
@@ -55,5 +61,42 @@ export const testimonialsData: Array<TestimonialProps> = [
     customerName: 'Garrett Martin',
     customerPosition: 'Creative Director',
     customerAvatar: Avatar,
+  },
+]
+
+export const featuresData: Array<FeaturesDataProps> = [
+  {
+    id: 1,
+    category: 'Connectivity',
+    items: [
+      'Hands Free Wireless Audio',
+      'Bluetooth 4.0 LE',
+      'Wi-Fi 2.4 GHz (802.11 b/g/n)',
+      'Smart Multiroom System Set Up',
+      'Party Mode with 6.0 Units and above',
+      'MESHNET Multi Speaker Network',
+    ]
+  },
+  {
+    id: 2,
+    category: 'App Features',
+    items: [
+      'Customize Music Schedule',
+      'Wake Up with Favorite Songs',
+      'Home Detection Auto Wake Up',
+      'Color Wheel',
+    ]
+  },
+  {
+    id: 3,
+    category: 'Sound & Music',
+    items: [
+      'Feel-in-chest Base Power',
+      'Lossless Digital Audio Transmission',
+      'Easy & Stable Stereo Pairing',
+      'Crisp and Clear High Frequency Sound',
+      'Streams from Cloud Music and Local Library',
+      'Auto Music from Last Song Stopped',
+    ]
   },
 ]
