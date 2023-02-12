@@ -1,9 +1,16 @@
 import {FC} from 'react'
+import {Section} from '../layout/Section'
+import {Testimonial} from '../Testimonial'
+import {testimonialsData} from '../../data/data'
 
 const Testimonials: FC = () => {
 
   return (
-    <>Testimonials</>
+    <Section>
+      {testimonialsData.map(props => (
+        <Testimonial key={props.id} {...props} />
+      ))}
+    </Section>
   )
 }
 

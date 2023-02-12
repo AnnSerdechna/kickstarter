@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import {
     Advantages,
-    Designed,
+    OurStory,
     Features,
     Hero,
     LunaEye,
@@ -18,7 +18,7 @@ const Home: FC = () => (
     <Menu />
     <Advantages />
     <MeetLuna />
-    <Designed />
+    <OurStory />
     <LunaEye />
     <Testimonials />
     <Features />

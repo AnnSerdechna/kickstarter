@@ -6,7 +6,7 @@ import {Section} from '../layout/Section'
 import {Paragraph} from '../Paragraph'
 
 const Hero: FC = () => {
-  const { title, description, image} = heroData
+  const { title, text, image} = heroData
 
   return (
     <Section>
@@ -14,7 +14,7 @@ const Hero: FC = () => {
         <div className={'w-1/3'}>
           <Title title={title} />
           <div className={'w-2/3'}>
-            <Paragraph content={description} color={'black'} />
+            <Paragraph content={text} />
           </div>
         </div>
         <div>
