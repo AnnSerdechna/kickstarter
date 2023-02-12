@@ -1,9 +1,13 @@
 import {FC} from 'react'
+import {Section} from '../layout/Section'
+import {Nav} from '../Nav'
 
 const Menu: FC = () => {
 
   return (
-    <>Menu</>
+    <Section marginBottom={62}>
+      <Nav />
+    </Section>
   )
 }
 

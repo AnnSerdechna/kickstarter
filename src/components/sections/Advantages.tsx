@@ -1,9 +1,11 @@
 import {FC} from 'react'
+import {Section} from '../layout/Section'
 
 const Advantages: FC = () => {
 
   return (
-    <>Advantages</>
+    <Section id={'about-us'}>
+    </Section>
   )
 }
 
