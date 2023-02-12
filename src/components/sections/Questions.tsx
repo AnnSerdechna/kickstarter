@@ -1,4 +1,5 @@
 import {FC} from 'react'
+
 import {Section} from '../layout/Section'
 import {Title} from '../Title'
 import {Button} from '../Button'
@@ -6,7 +7,6 @@ import {Button} from '../Button'
 const inputStyles = 'w-full py-3 px-8 bg-transparent outline-none border border-grey rounded font-primary text-black text-base'
 
 const Questions: FC = () => {
-
   return (
     <Section id={'get-in-touch'}>
       <div className={'flex gap-5'}>

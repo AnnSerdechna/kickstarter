@@ -1,14 +1,16 @@
-import {FC, ComponentPropsWithoutRef} from 'react'
+import {FC, ComponentPropsWithoutRef, ReactNode} from 'react'
 import classNames from 'classnames'
 
 export interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
-  text: string
+  text?: string
   styleType?: 'default' | 'accent' | 'tab'
+  icon?: ReactNode
 }
 
 const Button: FC<ButtonProps> = (
   {
     text,
+    icon,
     type = 'button',
     styleType = 'default',
     ...props
@@ -19,11 +21,13 @@ const Button: FC<ButtonProps> = (
       {'bg-black': styleType === 'default'},
       {'bg-accent': styleType === 'accent'},
       {'text-black': styleType === 'tab'},
+      {'bg-transparent px-2 py-h': !!icon},
     )}
     type={type}
     {...props}
   >
     {text}
+    {icon}
   </button>
 )
 
