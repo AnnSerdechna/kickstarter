@@ -1,0 +1,9 @@
+.dropdown.open {
+    transform: translateX(0);
+}
+
+.dropdown {
+  transform: translateX(-102vw);
+    transition: transform 500ms;
+}
+

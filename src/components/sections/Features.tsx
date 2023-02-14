@@ -9,7 +9,12 @@ const Features: FC = () => (
   <Section id={'features'}>
     <Title title={'Features'} />
 
-    <div className={'pt-20 pb-10 px-28'} style={{height: '100%', minHeight: 642, backgroundImage: `url(${FeaturesBg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}}>
+    <div
+      data-aos={'fade-up'}
+      data-aos-delay={'400'}
+      className={'pt-20 pb-10 px-28'}
+      style={{height: '100%', minHeight: 642, backgroundImage: `url(${FeaturesBg})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}}
+    >
       <ul className={'grid grid-cols-2 gap-y-14 font-primary'}>
         {featuresData.map(it => (
           <li key={it.id}>

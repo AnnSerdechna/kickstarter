@@ -1,7 +1,7 @@
 import {FC, PropsWithChildren} from 'react'
 
-const Section: FC<PropsWithChildren & {id?: string, marginBottom?: 200 | 62 | 90}> = ({ children, id, marginBottom = 200}) => (
-  <section id={id} className={'w-full'} style={{marginBottom: marginBottom}}>
+const Section: FC<PropsWithChildren & {id?: string}> = ({ children, id}) => (
+  <section id={id} className={'py-20 w-full'}>
     {children}
   </section>
 )
