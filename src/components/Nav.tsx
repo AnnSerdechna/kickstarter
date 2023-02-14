@@ -9,7 +9,7 @@ export const formatAnchorLink = (link: string) => {
 
 const Nav: FC<{ direction?: 'vertical' | 'horizontal', onClickItem?: () => void}> = ({ direction = 'horizontal', onClickItem}) => (
   <ul
-    data-aos={'fade-up'}
+    data-aos={'fade-down'}
     data-aos-delay={'400'}
     className={classNames(
       'flex justify-center items-center gap-3 font-primary',

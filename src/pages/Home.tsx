@@ -1,20 +1,19 @@
 import { FC } from 'react'
+import {useMedia} from 'react-use'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 import {
     Advantages,
     OurStory,
     Features,
     Hero,
+    Nav,
     LunaEye,
     MeetLuna,
-    Menu,
     Questions,
     Testimonials
 } from '../components'
-import {useMedia} from 'react-use'
-import Aos from 'aos'
-import 'aos/dist/aos.css';
-import {Nav} from '../components/Nav'
 
 const Home: FC = () => {
     const isLG = useMedia('(min-width: 1024px)')

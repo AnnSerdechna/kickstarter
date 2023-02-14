@@ -13,7 +13,11 @@ const Questions: FC = () => {
         <div className={'flex-1'}>
           <Title title={'DO YOU HAVE ANY QUESTIONS?'} />
         </div>
-        <div className={'flex-1'}>
+        <div
+          data-aos={'fade-up'}
+          data-aos-delay={'400'}
+          className={'flex-1'}
+        >
           <form className={''}>
             <div className={'mb-5'}>
               <input

@@ -45,7 +45,7 @@ export const advantagesData: Array<SectionDataProps> = [
     id: 1,
     title: 'Futuristic Design',
     text: 'To give Luna a truly flawless look, we specifically picked aircraft grade aluminum as its material and adopted both three-dimensional stretch-bending technology and a high precision cold forging technique.',
-    iconType: '',
+    iconType: 'futuristic',
   },
   {
     id: 2,
@@ -61,9 +61,9 @@ export const advantagesData: Array<SectionDataProps> = [
   },
   {
     id: 4,
-    title: '',
-    text: '',
-    iconType: '',
+    title: 'Intuitive Lighting System',
+    text: 'An intuitive user interface allows you to adjust the hue and saturation of color for lighting that fits any mood and situation.',
+    iconType: 'light',
   },
 ]
 

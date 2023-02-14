@@ -3,6 +3,8 @@ import {FC} from 'react'
 const Link: FC<{ href: string, text: string }> = ({ href, text }) => (
   <a
     href={href}
+    data-aos={'fade-up'}
+    data-aos-delay={'400'}
     className={`
               inline-block 
               py-1
