@@ -12,19 +12,25 @@ const OurStory: FC = () => {
   return (
     <Section id={'our-story'}>
       <div className={'flex gap-14'}>
-        <div className={'flex-1'}>
+        <div
+          data-aos={'fade-right'}
+          data-aos-delay={'400'}
+          className={'flex-1'}
+        >
           <img src={image} alt={'Our story'} />
         </div>
         <div className={'flex-1'}>
           <div>
             <Title title={title} />
-            <div className={'mb-14'}>
+            <div
+              className={'mb-14'}
+            >
               <Paragraph content={text} color={'grey'} />
             </div>
           </div>
-          <span>
+          <div>
             <Link href={link} text={linkText} />
-          </span>
+          </div>
         </div>
       </div>
     </Section>

@@ -11,6 +11,8 @@ import { ReactComponent as Facebook } from './icons/facebook.svg'
 import { ReactComponent as Twitter } from './icons/twitter.svg'
 import { ReactComponent as Instagram } from './icons/instagram.svg'
 import { ReactComponent as ArrowUp } from './icons/arrow-up.svg'
+import { ReactComponent as Hamburger } from './icons/hamburger.svg'
+import { ReactComponent as Close } from './icons/close.svg'
 
 type Icons = { [key: string]: FC<SVGProps<SVGSVGElement>> }
 
@@ -25,6 +27,8 @@ const icons: Icons = Object.freeze({
   facebook: Facebook,
   twitter: Twitter,
   arrowUp: ArrowUp,
+  hamburger: Hamburger,
+  close: Close,
 })
 
 interface SvgIconProps extends SVGProps<SVGSVGElement> {
@@ -39,6 +43,8 @@ interface SvgIconProps extends SVGProps<SVGSVGElement> {
   'facebook' |
   'twitter' |
   'instagram' |
+  'close' |
+  'hamburger' |
    string
 }
 

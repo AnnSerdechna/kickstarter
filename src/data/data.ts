@@ -4,9 +4,11 @@ import LunaEyeImage from  '../assets/images/luna-eye.jpg'
 import Avatar from  '../assets/images/ava.png'
 
 interface SectionDataProps {
+  id?: number
   title: string
   text: string
-  image: string
+  image?: string
+  iconType?: string
 }
 
 type LinkProps = {
@@ -36,6 +38,33 @@ export const heroData: SectionDataProps = {
 
 export const menuData: Array<string> = [
   'our story', 'about us', 'technology', 'features', 'get in touch'
+]
+
+export const advantagesData: Array<SectionDataProps> = [
+  {
+    id: 1,
+    title: 'Futuristic Design',
+    text: 'To give Luna a truly flawless look, we specifically picked aircraft grade aluminum as its material and adopted both three-dimensional stretch-bending technology and a high precision cold forging technique.',
+    iconType: 'futuristic',
+  },
+  {
+    id: 2,
+    title: 'Tweeter Speaker System',
+    text: 'To deliver a more layered sound performance better than a sole full-range speaker, our team equipped Luna with one more tweeter speaker responsible for high-frequency sound independently.',
+    iconType: 'speaker',
+  },
+  {
+    id: 3,
+    title: 'MultiRoom System',
+    text: 'Luna is natively compatible with your home Wi-Fi. Set up multiple speakers in different rooms to expand your music experience into the entire house.',
+    iconType: 'wifi',
+  },
+  {
+    id: 4,
+    title: 'Intuitive Lighting System',
+    text: 'An intuitive user interface allows you to adjust the hue and saturation of color for lighting that fits any mood and situation.',
+    iconType: 'light',
+  },
 ]
 
 export const ourStoryData: SectionDataProps & LinkProps = {

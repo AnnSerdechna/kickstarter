@@ -19,11 +19,15 @@ const LunaEye: FC = () => {
             <Paragraph content={text} color={'grey'} />
           </div>
         </div>
-        <span>
+        <div>
             <Link href={link} text={linkText} />
-          </span>
+          </div>
       </div>
-      <div className={'flex-1'}>
+      <div
+        data-aos={'fade-left'}
+        data-aos-delay={'400'}
+        className={'flex-1'}
+      >
         <img src={image} alt={'Our story'} />
       </div>
     </div>
